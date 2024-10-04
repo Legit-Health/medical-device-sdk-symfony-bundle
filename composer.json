@@ -1,5 +1,5 @@
 {
-    "name": "legit-health/medical-device-sdk-symfony",
+    "name": "legit-health/medical-device-sdk-bundle",
     "description": "Bundles that integrates the SDK for working with the Legit.Health's Medical Device API",
     "type": "library",
     "license": "MIT",
