@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Legit-Health/medical-device-sdk-php.git",
-                "reference": "065a69e7f75606908ca223dbfebef8eaa86c900b"
+                "reference": "b907193381c34c84cac4597f0a68fc4a39e4ff06"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Legit-Health/medical-device-sdk-php/zipball/065a69e7f75606908ca223dbfebef8eaa86c900b",
-                "reference": "065a69e7f75606908ca223dbfebef8eaa86c900b",
+                "url": "https://api.github.com/repos/Legit-Health/medical-device-sdk-php/zipball/b907193381c34c84cac4597f0a68fc4a39e4ff06",
+                "reference": "b907193381c34c84cac4597f0a68fc4a39e4ff06",
                 "shasum": ""
             },
             "require": {
@@ -58,7 +58,7 @@
                 "issues": "https://github.com/Legit-Health/medical-device-sdk-php/issues",
                 "source": "https://github.com/Legit-Health/medical-device-sdk-php/tree/1.0.0"
             },
-            "time": "2025-06-02T15:17:24+00:00"
+            "time": "2025-06-02T16:27:53+00:00"
         },
         {
             "name": "psr/cache",

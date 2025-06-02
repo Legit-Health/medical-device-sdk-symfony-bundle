@@ -3,13 +3,13 @@
 namespace LegitHealth\MedicalDeviceBundle;
 
 use LegitHealth\MedicalDevice\Common\BearerToken;
-use LegitHealth\MedicalDevice\MedicalDeviceArguments\{
+use LegitHealth\MedicalDevice\Arguments\{
     DiagnosisSupportArguments,
     SeverityAssessmentAutomaticLocalArguments,
     SeverityAssessmentManualArguments
 };
 use LegitHealth\MedicalDevice\MedicalDeviceClient as MedicalDeviceClientBase;
-use LegitHealth\MedicalDevice\MedicalDeviceResponse\{AccessToken, DiagnosisSupportResponse, SeverityAssessmentResponse};
+use LegitHealth\MedicalDevice\Response\{AccessToken, DiagnosisSupportResponse, SeverityAssessmentResponse};
 use Symfony\Contracts\HttpClient\HttpClientInterface;
 
 class MedicalDeviceClient
