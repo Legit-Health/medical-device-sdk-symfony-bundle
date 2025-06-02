@@ -1,0 +1,22 @@
+{
+    "name": "legit-health/medical-device-sdk-bundle",
+    "description": "Bundles that integrates the SDK for working with the Legit.Health's Medical Device API",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "LegitHealth\\MedicalDeviceBundle\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Gerardo",
+            "email": "gerardo@legit.health"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "symfony/framework-bundle": "^7.1",
+        "legit-health/medical-device-sdk": "^1.0"
+    }
+}
