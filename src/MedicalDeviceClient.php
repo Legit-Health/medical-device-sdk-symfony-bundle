@@ -40,4 +40,9 @@ class MedicalDeviceClient
     {
         return $this->medicalDeviceClient->severityAssessmentManual($arguments, $bearerToken);
     }
+
+    public function deviceInformation(BearerToken $bearerToken): array
+    {
+        return $this->medicalDeviceClient->deviceInformation($bearerToken);
+    }
 }
