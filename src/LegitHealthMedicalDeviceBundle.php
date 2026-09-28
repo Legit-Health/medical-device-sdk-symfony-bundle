@@ -27,15 +27,13 @@ class LegitHealthMedicalDeviceBundle extends AbstractBundle
 
     public function loadExtension(array $config, ContainerConfigurator $containerConfigurator, ContainerBuilder $containerBuilder): void
     {
-        $containerConfigurator->import('../config/services.xml');
-
         $containerConfigurator->services()->set('medical_device.http.client', HttpClient::class)
             ->factory([HttpClientFactory::class, 'withConfig'])
             ->args([$config['api_url']])
             ->tag('http_client.client');
 
         $containerConfigurator->services()
-            ->get('LegitHealth\MedicalDeviceBundle\MedicalDeviceClient')
-            ->arg(0, new Reference('medical_device.http.client'));
+            ->set('LegitHealth\MedicalDeviceBundle\MedicalDeviceClient')
+            ->args([new Reference('medical_device.http.client')]);
     }
 }
