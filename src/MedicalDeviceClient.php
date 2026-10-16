@@ -5,11 +5,12 @@ namespace LegitHealth\MedicalDeviceBundle;
 use LegitHealth\MedicalDevice\Common\BearerToken;
 use LegitHealth\MedicalDevice\Arguments\{
     DiagnosisSupportArguments,
+    ImageValidationArguments,
     SeverityAssessmentAutomaticLocalArguments,
     SeverityAssessmentManualArguments
 };
 use LegitHealth\MedicalDevice\MedicalDeviceClient as MedicalDeviceClientBase;
-use LegitHealth\MedicalDevice\Response\{AccessToken, DiagnosisSupportResponse, SeverityAssessmentResponse};
+use LegitHealth\MedicalDevice\Response\{AccessToken, DiagnosisSupportResponse, ImageValidationResponse, SeverityAssessmentResponse};
 use Symfony\Contracts\HttpClient\HttpClientInterface;
 
 class MedicalDeviceClient
@@ -29,6 +30,11 @@ class MedicalDeviceClient
     public function diagnosisSupport(DiagnosisSupportArguments $arguments, BearerToken $bearerToken): DiagnosisSupportResponse
     {
         return $this->medicalDeviceClient->diagnosisSupport($arguments, $bearerToken);
+    }
+
+    public function imageValidation(ImageValidationArguments $arguments, BearerToken $bearerToken): ImageValidationResponse
+    {
+        return $this->medicalDeviceClient->imageValidation($arguments, $bearerToken);
     }
 
     public function severityAssessmentAutomaticLocal(SeverityAssessmentAutomaticLocalArguments $arguments, BearerToken $bearerToken): SeverityAssessmentResponse
