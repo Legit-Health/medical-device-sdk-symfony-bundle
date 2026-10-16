@@ -17,6 +17,6 @@
     "minimum-stability": "stable",
     "require": {
         "symfony/framework-bundle": "^8.0",
-        "legit-health/medical-device-sdk": "^3.0"
+        "legit-health/medical-device-sdk": "^3.1"
     }
 }
